@@ -70,18 +70,18 @@ gunicorn app:app --bind 0.0.0.0:5000
 
 ## 🔁 API Usage
 
-### Endpoint
+### 1. Endpoint
 POST /generate
 
-### Payload
+### 2. Payload
 {
   "prompt": "A surreal landscape with floating islands"
 }
 
-### Response
+### 3. Response
 {
   "image_url": "static/images/generated.png"
 }
 
-### Image Access
+### 4. Image Access
 GET /images/<filename>
