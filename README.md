@@ -41,6 +41,8 @@ conda activate sd_env
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install diffusers transformers accelerate flask python-dotenv
 
+---
+
 ## 🗂️ Project Structure
 
 stable-diffusion-server/
@@ -50,13 +52,13 @@ stable-diffusion-server/
 ├── .env
 └── requirements.txt
 
-
+---
 
 ## 📄 .env Configuration
 
 HF_TOKEN=your_huggingface_access_token
 
-
+---
 
 ## 🧠 Run Server
 
@@ -64,7 +66,7 @@ python app.py
 # OR for production
 gunicorn app:app --bind 0.0.0.0:5000
 
-
+---
 
 ## 🔁 API Usage
 
